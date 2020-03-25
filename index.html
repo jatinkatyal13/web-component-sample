@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/@coding-blocks/motley/dist/app.min.css">
+    <script src="https://unpkg.com/@coding-blocks/web-components@0.0.8/dist/index.js"></script>
+
+    <script>
+      function openNavbar() {
+        const navbar = document.getElementById("navbar")
+        navbar.showhamburger = true
+      }
+    </script>
+  </head>
+  <body class="a-hb p-0">
+    <div class="d-flex px-5 py-4 justify-content-between align-items-center">
+      <div class="d-md-none">
+        <div class="hamburger-menu mr-3">
+          <div class="ham-toggle" onclick="openNavbar()">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-10 col-12">
+        <div class="row align-items-center">
+          <div class="col-xl-2 col-3 px-lg-4 px-0">
+            <img src="https://codingblocks.com/assets/images/cb/cblogo.png" alt="Logo" />
+          </div>
+          <div class="col-xl-10 col-9 dsp-none-md">
+            <div class="d-flex align-items-center h-100">
+              <div class="font-sm light px-3">
+                <a href="/app">
+                  Dashboard
+                </a>
+              </div>
+              <div class="font-sm light px-3">
+                <a href="/app/dcb">
+                  Daily Code Bytes
+                </a>
+              </div>
+              <div class="font-sm light px-3">
+                <a href="/app/practice">
+                  Practice Problems
+                </a>
+              </div>
+              <div class="font-sm light px-3">
+                <a href="/app/contests">
+                  Contests
+                </a>
+              </div>
+              <div class="font-sm light px-3">
+                <a href="/app/competitions">
+                  Competitions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="button-solid button-orange dsp-none-sm white" href="/app/">
+        Get Started
+      </a>
+    </div>
+    <div>
+      <cb-mobile-navbar id="navbar">
+        <div class="t-align-c mt-4">
+          <button class="button-solid button-orange">Login</button>
+        </div>
+      </cb-mobile-navbar>
+    </div>
+    <div>
+      <cb-navbar topalign="right" />
+    </div>
+    <h1>Hello World</h1>
+  </body>
+</html>
+
